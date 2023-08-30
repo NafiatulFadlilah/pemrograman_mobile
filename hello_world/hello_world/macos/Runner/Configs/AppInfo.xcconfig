@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+PRODUCT_NAME = hello_world
+
+
+PRODUCT_BUNDLE_IDENTIFIER = com.example.helloWorld
+
+
+PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.
