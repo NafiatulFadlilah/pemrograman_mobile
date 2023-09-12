@@ -5,7 +5,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  //const MyApp({super.key});
   int _count = 0;
 
   @override
