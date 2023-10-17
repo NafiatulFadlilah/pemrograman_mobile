@@ -23,9 +23,7 @@ class HomeState extends State<Home> {
   }
 
   Widget build(BuildContext context) {
-    if (itemList == null) {
-      itemList = <Item>[];
-    }
+    itemList ??= <Item>[];
 
     return Scaffold(
       appBar: AppBar(
@@ -45,14 +43,14 @@ class HomeState extends State<Home> {
                 Item coba = Item("", 0);
                 coba.id = 0;
                 var item = await navigateToEntryForm(context, coba);
-                if (item != null) {
+                if (item != null){
                   //TODO 2 Panggil Fungsi untuk Insert ke DB
                   int result = await dbHelper.insert(item);
                   if (result > 0) {
                     updateListView();
                   }
                 }
-              },
+                },
             ),
           ),
         ),

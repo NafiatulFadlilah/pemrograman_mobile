@@ -24,8 +24,10 @@ class DbHelper {
     await db.execute('''
                       CREATE TABLE item (
                       id INTEGER PRIMARY KEY AUTOINCREMENT,
+                      kodeBarang TEXT,
                       name TEXT,
-                      price INTEGER
+                      price INTEGER,
+                      stok INTEGER
                     )
  ''');
   }
